@@ -23,6 +23,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 Os projetos desenvolvidos são uma _landing page_ para estudo básico do css.
 
 - [Jogo de Adivinhação - Figma, clique aqui.](https://www.figma.com/file/Nzlh07V7QRDba0ceBwKrBm/Jogo-Adivinha%C3%A7%C3%A3o?type=design&node-id=0-1&mode=design&t=gHJXrRcINys20nUw-0)
+- [Biscoitinho da Sorte - Figma, clique aqui.](<https://www.figma.com/file/VwTdNrUZSQqtkHTOPtL6Pq/Biscoito-da-Sorte-(Community)?type=design&node-id=0-1&mode=design&t=7rSHg6XyDshlWmih-0>)
 
 ---
 

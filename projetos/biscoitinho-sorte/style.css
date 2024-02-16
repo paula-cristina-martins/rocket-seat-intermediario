@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --color-base-white: #ffffff;
+  --color-base-orange-400: #ffa931;
+  --color-base-orange-500: #ff9500;
+  --color-base-purple-700: #190361;
+  --color-base-pink-600: #bb00ff;
+  --color-base-gray-100: #e4edf1;
+  --color-base-gray-500: #34355b;
+  --color-base-black: #000000;
+}
+
+body {
+  background: linear-gradient(
+    45deg,
+    var(--color-base-purple-700),
+    var(--color-base-pink-600)
+  );
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+  font-size: 1.6rem;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+main {
+  background: var(--color-base-white);
+  box-shadow: 0.5rem 0.5rem 1rem 1rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.6rem;
+  padding: 4.8rem 6.4rem 6.4rem;
+  width: min(42.8rem, 90%);
+  margin-top: -12rem;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: bold;
+  color: var(--color-base-gray-500);
+  font-size: 2.4rem;
+}
+
+.screen1 p {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  color: var(--color-base-gray-500);
+  font-size: 1.5rem;
+  padding: 1.4rem 0 1.8rem;
+}
+
+#openCookie:hover {
+  cursor: pointer;
+  animation: shake 0.4s infinite alternate;
+}
+
+.hide {
+  display: none;
+}
+
+.screen2 .message {
+  background-color: var(--color-base-gray-100);
+  box-shadow: 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  margin: 1.8rem 0;
+  --startY: 100%;
+  animation: move 1s;
+}
+
+.screen2 p {
+  font-family: "Dancing Script", cursive;
+  font-style: normal;
+  color: var(--color-base-black);
+  font-size: 2.4rem;
+  padding: 1.4rem 0 1.8rem;
+}
+
+#breakCookie {
+  padding: 3.6rem 0;
+  --startY: -10%;
+  animation: move 2s;
+}
+
+#btnReset {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: var(--color-base-orange-500);
+  color: var(--color-base-white);
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 1.6rem;
+  margin-top: 1.6rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#btnReset:hover {
+  background-color: var(--color-base-orange-400);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translateY(var(--startY));
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-2rem, 0);
+  }
+  50% {
+    transform: translate(2rem, 0);
+  }
+  75% {
+    transform: translate(-2rem, 0);
+  }
+  100% {
+    transform: translate(2rem, 0);
+  }
+}
