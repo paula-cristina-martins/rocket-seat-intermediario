@@ -1,0 +1,68 @@
+{
+  // editor
+  "editor.wordWrap": "on",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 20,
+  "editor.tabSize": 2,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "files.autoSave": "afterDelay",
+
+  // explorer
+  "explorer.compactFolders": false,
+
+  // workbench
+  "workbench.editor.enablePreview": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Omni",
+
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#501e01",
+    "activityBar.activeBorder": "#f1c1a6",
+    "activityBar.background": "#501e01",
+    "activityBar.foreground": "#f1c1a6",
+    "activityBar.inactiveForeground": "#f1c1a6",
+    "activityBarBadge.background": "#f1c1a6",
+    "activityBarBadge.foreground": "#501e01",
+    "statusBar.background": "#141414",
+    "statusBar.foreground": "#f1c1a6",
+    "statusBarItem.hoverBackground": "#8d99a6",
+    "titleBar.activeBackground": "#501e01",
+    "titleBar.activeForeground": "#f1c1a6",
+    "titleBar.inactiveBackground": "#8d99a6",
+    "titleBar.inactiveForeground": "#8d99a6"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  // prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.enable": true,
+  "prettier.singleQuote": false,
+  "prettier.tabWidth": 2,
+  "prettier.semi": false,
+
+  // terminal
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.profiles.windows": {
+    "Git Bash": {
+      "source": "Git Bash"
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "cSpell.language": "en,pt,pt_BR",
+  "cSpell.words": [
+    "Beecrowd",
+    "crocância",
+    "linkedin",
+    "mentoria",
+    "Mentoria",
+    "Rocketseat",
+    "rocketsect"
+  ],
+  "liveServer.settings.port": 5501
+}
