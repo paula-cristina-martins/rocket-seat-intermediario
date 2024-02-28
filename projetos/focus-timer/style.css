@@ -61,6 +61,14 @@ body {
   display: flex;
 }
 
+h1 {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+  text-transform: uppercase;
+}
+
 #timer {
   font-size: 9.6rem;
   font-weight: bold;
