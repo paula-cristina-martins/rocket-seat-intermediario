@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Temporizador" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus Time 2.0</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./src/main.js" defer></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <div class="app">
+      <div class="counter">
+        <section id="timer" class="timer">
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </section>
+
+        <section id="controls" class="buttons">
+          <button data-action="toggleRunning" class="ph ph-play-circle">
+            <span class="sr-only">Iniciar contador</span>
+          </button>
+          <button data-action="toggleRunning" class="ph ph-pause-circle">
+            <span class="sr-only">Pausar contador</span>
+          </button>
+          <button data-action="reset" class="ph ph-stop-circle">
+            <span class="sr-only">Reiniciar contador</span>
+          </button>
+          <button data-action="toggleMinutesPlus" class="ph ph-plus-circle">
+            <span class="sr-only">Adicionar 5 minutos</span>
+          </button>
+          <button data-action="toggleMinutesMinus" class="ph ph-minus-circle">
+            <span class="sr-only">Remover 5 minutos</span>
+          </button>
+        </section>
+      </div>
+      <div class="type-of-musics">
+        <section id="music" class="musics">
+          <button data-action="forestMusic" class="ph ph-tree" id="isForest">
+            <span class="sr-only">Toque de floresta</span>
+          </button>
+          <button data-action="rainMusic" class="ph ph-cloud-snow" id="isRain">
+            <span class="sr-only">Toque de chuva</span>
+          </button>
+          <button
+            data-action="coffeeMachineMusic"
+            class="ph ph-storefront"
+            id="isCoffeeMachine"
+          >
+            <span class="sr-only">Toque de cafeteira</span>
+          </button>
+          <button
+            data-action="fireplaceMusic"
+            class="ph ph-fire"
+            id="isFireplace"
+          >
+            <span class="sr-only">Toque de lateira</span>
+          </button>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
