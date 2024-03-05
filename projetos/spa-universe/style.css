@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-green-500: #02799d;
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: var(--color-white);
+}
+
+.image-home {
+  background-image: url("./assets/home.png");
+}
+
+.image-explorer {
+  background-image: url("./assets/explorer.png");
+}
+
+.image-universe {
+  background-image: url("./assets/universe.png");
+}
+
+nav {
+  padding: 4rem 0 0 7.2rem;
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  padding-right: 3.2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 2.4rem;
+  padding: 0 3.2rem 0 0;
+  transition: font-weight 0.3s;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.home {
+  display: grid;
+  place-items: center;
+  padding: 18rem 0;
+}
+
+.home h1 {
+  font-size: 4.8rem;
+  padding: 2.4rem 0;
+}
+
+.home button {
+  border: 0;
+  background-color: transparent;
+  border: 1px solid var(--color-white);
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--color-white);
+  text-transform: uppercase;
+  padding: 1.2rem 3.2rem;
+  transition: background 0.5s;
+}
+
+.home button:hover {
+  cursor: pointer;
+  background-color: var(--color-white);
+  color: var(--color-green-500);
+}
+
+.content {
+  padding: 6.4rem 16rem;
+}
+
+.content h1 {
+  font-size: 4.8rem;
+  padding: 2.4rem 0;
+}
+
+.content p {
+  font-size: 1.8rem;
+  max-width: 64rem;
+  line-height: 3.2rem;
+  text-align: justify;
+}
